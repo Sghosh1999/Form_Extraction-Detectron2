@@ -21,8 +21,7 @@ pip install opencv-python
 ``` 
 pip install labelme
 ```
-
-![Image Plogon Annotation](/images/labelme-1.PNG "This is a sample image.")
+![Image Annotation](images/result1.png)
 
 ## Step 3: Convert the Annotations to COCO Format
 ``` 
