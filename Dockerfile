@@ -66,6 +66,10 @@ RUN CFLAGS="-Wno-narrowing" pip install -e detectron2  # Skip CUDA-dependent com
 COPY . /home/site/wwwroot/data_harvester
 # RUN chmod -R 777 /home/site/wwwroot
 RUN chown -R k1_nonroot /home/site/wwwroot/data_harvester
+RUN mkdir -p /home/.EasyOCR
+RUN chown -R k1_nonroot /home/.EasyOCR
+RUN chmod -R 777 /home/.EasyOCR
+# RUN chown -R k1_nonroot /home
 USER k1_nonroot
 # Expose the port Flask will be running on
 EXPOSE 8000
