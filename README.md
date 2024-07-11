@@ -4,12 +4,15 @@
 - Steps for Installing Detectron2 in Windows
 - Clone the Official Repository [Detectron2](https://github.com/facebookresearch/detectron2).
 
+Before getting into the steps, Install Visual Studio Installer 2019 C++ Development Toolkit.
+![image](https://github.com/Sghosh1999/Form_Extraction-Detectron2/assets/44112345/e0cde662-99cd-42a4-992d-a450f006c9a8)
+
+
 ## Step 1: Setup the Detectron2 Environment
 ``` 
 conda create -n detectron_env python=3.8 
 conda activate detectron_env 
-conda install pytorch torchvision torchaudio cudatoolkit=11.0 -c pytorch
-pip install cpython
+conda install pytorch torchvision torchaudio pytorch-cuda=10.2 -c pytorch
 git clone https://github.com/facebookresearch/detectron2.git
 cd detectron2
 pip install -e .
